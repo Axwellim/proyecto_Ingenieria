@@ -18,3 +18,6 @@ use App\Http\Controllers\controlador;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/login', [controlador::class, 'loginReact']);
+Route::post('/register', [controlador::class, 'registerReact']);

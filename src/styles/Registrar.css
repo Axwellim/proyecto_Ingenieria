@@ -1,0 +1,79 @@
+/* Contenedor principal del formulario */
+.registro-formulario {
+  background: #fff !important;  /* fondo blanco */
+  padding: 40px;
+  max-width: 600px !important;  /* ancho máximo aumentado */
+  width: 90% !important;        /* ocupa 90% del contenedor padre */
+  margin: 30px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.registro-formulario h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Estilos para los grupos de formulario */
+.register-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+.register-form label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #555;
+}
+
+/* Inputs y select */
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Placeholder */
+.register-form input::placeholder,
+.register-form select::placeholder {
+  color: #999;
+}
+
+/* Focus en inputs y select */
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #4A90E2;
+}
+
+/* Botón de registro */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4A90E2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #357ABD;
+}
+
+/* Opcional: si dashboard-content limita ancho, quitarle el max-width */
+/* Ejemplo: */
+

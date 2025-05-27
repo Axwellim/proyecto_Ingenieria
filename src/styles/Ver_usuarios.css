@@ -1,0 +1,156 @@
+/* Tus estilos originales para tabla y badges (sin cambios) */
+.usuarios-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.usuarios-title {
+  color: black; /* Título en negro */
+  margin-bottom: 16px; /* Opcional */
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.usuarios-tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.usuarios-tabla th,
+.usuarios-tabla td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.usuarios-tabla td {
+  color: black; /* Texto negro */
+}
+
+.usuarios-tabla th {
+  background-color: #4A90E2;
+  color: white;
+  font-weight: 600;
+}
+
+.usuarios-tabla tr:hover {
+  background-color: #f1f1f1;
+}
+
+.rol-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.rol-badge.administrador {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.rol-badge.usuario {
+  background-color: #2196F3;
+  color: white;
+}
+
+.rol-badge.invitado {
+  background-color: #FFC107;
+  color: black;
+}
+
+/* --- Barra superior negra fija --- */
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* ajusta según tu header */
+  z-index: 1000;
+
+  background-color: #000; /* negro */
+  color: white; /* texto blanco */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para el logo y menú */
+.dashboard-header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.dashboard-header nav.navbar ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-header nav.navbar ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-header nav.navbar ul.nav-links li a:hover {
+  background-color: #333; /* gris oscuro para hover */
+}
+
+/* Zona derecha de la barra */
+.dashboard-header .right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.dashboard-header .welcome-text {
+  color: white;
+}
+
+.dashboard-header .logout-button {
+  background-color: #ff4444;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-header .logout-button:hover {
+  background-color: #cc0000;
+}
+
+/* --- Ajuste para el contenido que no quede tapado por el header --- */
+.dashboard-content {
+  margin-top: 60px; /* igual a la altura del header */
+  padding: 20px;
+  overflow: auto;
+  height: calc(100vh - 60px);
+}
+
+.usuarios-form {
+  max-width: 100%;
+  overflow-x: auto;
+}
